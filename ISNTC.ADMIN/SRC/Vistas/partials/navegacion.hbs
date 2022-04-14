@@ -1,11 +1,43 @@
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="/css/navegacion.css">
 {{#if user}}
 
+<nav>
+  <div id="nav1">
+    <a href="/comentarios/comentariosLista/{{user.idUsuarios}}"> Comentarios</a>
+  </div>
 
-    <!--div id="Colaboracion">
-        <a href="/colaboracion/lista/{{user.idUsuario}}">Experiencias</a>
-    </div>-->
-
+  <div id="nav2">
+    <a href="/conferencias/conferenciasLista/{{user.idUsuarios}}"> Conferencias</a>
+  </div>
   
+  <div id="nav3">
+    <a href="/consejos/consejosLista/{{user.idUsuarios}}"> Consejos</a>
+  </div>
+
+  <div id="nav4">
+    <a href="/experiencias/experienciasLista/{{user.idUsuarios}}"> Experiencias</a>
+  </div>
+
+  <div id="nav5">
+    <a href="/foro/foroLista/{{user.idUsuarios}}"> Foro</a>
+  </div>
+
+  <div id="nav6">
+    <a href="/proyecto/proyectoLista/{{user.idUsuarios}}"> Proyecto</a>
+  </div>
+
+  <div id="nav7">
+    <a href="/recomendaciones/recomendacionesLista/{{user.idUsuarios}}"> Recomendaciones</a>
+  </div>
+
+  <div id="nav8">
+    <a href="/salas/salasLista/{{user.idUsuarios}}"> Salas</a>
+  </div>
+
+  <div id="nav9">
+    <a href="/CerrarSesion"> Cerrar sesión </a>
+  </div>
+
+</nav>
 
 {{/if}} 
