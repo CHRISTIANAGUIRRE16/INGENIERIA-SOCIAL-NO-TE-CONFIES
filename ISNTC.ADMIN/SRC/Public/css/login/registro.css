@@ -13,3 +13,23 @@ body{
     max-height: 100%;  
 }
 
+#contenedor{
+    position: absolute;
+    top: 30%;
+    left:40% ;
+    
+}
+#titulo{
+    position:absolute;
+    top: -30%;
+    left: 15%;
+    color: whitesmoke;
+}
+#button{
+    position:absolute;
+    top :110%;
+    left: 15%;
+
+}
+
+
