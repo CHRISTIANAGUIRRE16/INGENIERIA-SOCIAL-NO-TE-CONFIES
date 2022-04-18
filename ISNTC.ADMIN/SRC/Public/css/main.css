@@ -20,7 +20,7 @@ input{
     text-align: center;
 }
 button{
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.179);
     color: whitesmoke;
     text-align: center;
     display: block;
