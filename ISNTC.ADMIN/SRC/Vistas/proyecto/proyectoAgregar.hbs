@@ -3,3 +3,21 @@
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
 <form action="/proyectoAgregar" method="post" TYPE="text/css" MEDIA=screen>
+
+        <div id="Nombre">
+            <label>Nombre Proyecto:</label>
+            <input type="text" name="nombreProyecto" id="nombre">
+        </div>
+        <div id="objetivos">
+            <label>Objetivos</label>
+            <input type="text" id="numeros" checked>
+            <button type="button" onclick="objetivos.crear()">-></button>
+        </div>
+        <div id="boton">
+            <button type="submit">Guardar</button>
+        </div>
+    </div>
+</form>
+
+<script src="/js/numero.js"></script>
+<script src="/js/objetivos.js"></script>

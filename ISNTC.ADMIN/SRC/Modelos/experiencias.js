@@ -1,4 +1,4 @@
-const experiencias = (sequelize, type)=>{
+const experiencias = (sequelize, type) => {
     return sequelize.define('experiencias', {
         idExperiencias: {
             type: type.INTEGER,
@@ -6,22 +6,22 @@ const experiencias = (sequelize, type)=>{
             autoIncrement: true
         },
         temaExperiencias: type.STRING,
-       fechaExperiencias: type.STRING,
-       videoExperiencias: type.STRING,
-      
-        
-        
-        creacionExperiencias:{
+        fechaExperiencias: type.STRING,
+        videoExperiencias: type.STRING,
+
+
+
+        creacionExperiencias: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         },
-        actualizacionExperiencias:{
+        actualizacionExperiencias: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP '),
             allowNull: false
         }
-    },{
+    }, {
         timestamps: false,
     })
 }

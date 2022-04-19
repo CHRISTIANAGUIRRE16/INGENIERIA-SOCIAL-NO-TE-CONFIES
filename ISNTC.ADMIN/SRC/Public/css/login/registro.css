@@ -12,24 +12,114 @@ body{
     max-width: 100%;
     max-height: 100%;  
 }
-
-#contenedor{
+#tPrincipal{
     position: absolute;
-    top: 30%;
-    left:40% ;
-    
+    top: 19.7%;
+    left: 24%;
+    color: whitesmoke;
+   zoom: 200%;
 }
 #titulo{
-    position:absolute;
-    top: -30%;
-    left: 15%;
-    color: whitesmoke;
+        position: absolute;
+        top:35% ;
+        left: 19%;
+        color: whitesmoke;
+        background-color: rgba(94, 109, 125, 0.295);
+        
+        padding: 6px;
+        padding-left: 10.1% ;
+        padding-right:  8.7% ;
+}
+#Nombre{
+    position: absolute;
+    top: 41.7%;
+    left: 32%;
+    background-color: rgba(94, 109, 125, 0.295);
+    padding: 18.5px;
+}
+#Email{
+    position: absolute;
+    top: 50.1%;
+    left: 32%;
+    background-color: rgba(94, 109, 125, 0.295);
+    padding: 18.5px;
+}
+#Usuario{
+    position: absolute;
+    top: 58.5%;
+    left: 32%;
+    background-color: rgba(94, 109, 125, 0.295);
+    padding: 18.5px;
+}
+#Contraseña{
+    position: absolute;
+    top: 66.8%;
+    left: 32%;
+    background-color: rgba(94, 109, 125, 0.295);
+    padding: 18.5px;
 }
 #button{
-    position:absolute;
-    top :110%;
-    left: 15%;
-
+    position: absolute;
+    top: 75.1%;
+    left: 32%;
+    background-color: rgba(94, 109, 125, 0.295);
+    padding: 18.5px;
+    padding-left: 3.1%;
+    padding-right: 3.15%;
+}
+#iNombres{
+    position: absolute;
+    top: 41.7%;
+    left: 19%;
+    color: whitesmoke;
+    background-color: rgba(94, 109, 125, 0.295);
+    padding: 2%;
+    padding-right: 1.8%;
+    padding-top: 1%;
+    padding-bottom: 1.5%;
+}
+#iEmail{
+    position: absolute;
+    top: 51.9%;
+    left: 19%;
+    color: whitesmoke;
+    background-color: rgba(94, 109, 125, 0.295);
+    padding: 2%;
+    padding-top: 0.2%;
+    padding-bottom: 0.1%;
+    
+    padding-right: 3.4%;
+    
+}
+#iUsuario{
+    position: absolute;
+    top: 57.8%;
+    left: 19%;
+    color: whitesmoke;
+    background-color: rgba(94, 109, 125, 0.295);
+    padding: 2%;
+    padding-right: 2.350%;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
+#iContraseña{
+    position: absolute;
+    top: 68.1%;
+    left: 19%;
+    color: whitesmoke;
+    background-color: rgba(94, 109, 125, 0.295);
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 4.1%;
+    padding-right: 1.5%;
+    padding-left: 1%;
 }
 
-
+#imagen img {
+    position: absolute;
+    top: 79% ;
+    left: 63%;
+    width: 25%;
+    opacity: 0.5;
+    border-color: black;
+}
