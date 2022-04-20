@@ -4,20 +4,26 @@
 </div>
 <form action="/proyectoAgregar" method="post" TYPE="text/css" MEDIA=screen>
 
-        <div id="Nombre">
-            <label>Nombre Proyecto:</label>
-            <input type="text" name="nombreProyecto" id="nombre">
+        <div id="inputNombreProyecto">
+            <label for="nombreProyecto">Nombre Proyecto:</label>
+            <input type="text" name="nombreProyecto" id="inputNombreProyecto">
         </div>
-        <div id="objetivos">
-            <label>Objetivos</label>
-            <input type="text" id="numeros" checked>
-            <button type="button" onclick="objetivos.crear()">-></button>
+        <div id="inputdescripcionProyecto">
+            <label for="descripcionProyecto">Descripción Proyecto:</label>
+            <input type="string (2000)" name="descripcionProyecto:" id="inputdescripcionProyecto">
         </div>
-        <div id="boton">
-            <button type="submit">Guardar</button>
+        <div id="inputMisionProyecto">
+            <label for="misionProyecto">Misión Proyecto:</label>
+            <input type="string (1000)" name="misionProyecto" id="inputMisionProyecto">
         </div>
+        <div id="inputVisionProyecto">
+            <label for="visionProyecto">Visión Proyecto:</label>
+            <input type="string (1000)" name="visionProyecto" id="inputVisionProyecto">
+        </div>
+       
     </div>
 </form>
 
 <script src="/js/numero.js"></script>
 <script src="/js/objetivos.js"></script>
+ 
