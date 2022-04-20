@@ -2,4 +2,15 @@
 <div id="fond">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/proyecto/proyectoLista" method="post" TYPE="text/css" MEDIA=screen>
+<form action="/proyecto/proyectoLista/{{user.idUsuarios}}" method="get" TYPE="text/css" MEDIA=screen></form>
+{{#each traer}}
+<div id="titulo">
+    <label>{{nombreProyecto}}</label>
+</div>
+<div id="editar">
+    <a href="/proyecto/proyectoEditar/{{idProyectos}}">
+    <button>Editar</button></a>
+</div>
+{{/each}}
+{{#each objetivos}}
+{{/each}}

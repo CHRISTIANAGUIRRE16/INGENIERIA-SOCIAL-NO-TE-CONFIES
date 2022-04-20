@@ -2,4 +2,54 @@
 <div id="fond">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/proyecto/proyectoEditar" method="post" TYPE="text/css" MEDIA=screen>
+{{#each traer}}
+<form action="/proyecto/proyectoEditar/{{idProyectos}}" method="post" TYPE="text/css" MEDIA=screen>
+{{/each}}
+{{#each traer}}
+<div id="inputNombreProyecto">
+        <label for="nombreProyecto">Nombre Proyecto:</label>
+        <input value="{{nombreProyecto}} "type="text" name="nombreProyecto" id="inputNombreProyecto">
+    </div>
+    <div id="inputDescripcionProyecto">
+        <label>Descripción Proyecto:</label>
+        <textarea name="descripcionProyecto" id="inputdescripcionProyecto"  aria-checked="true" required
+            maxlength="2000">{{descripcionProyecto}}</textarea>
+
+    </div>
+    <div id="inputMisionProyecto">
+        <label>Misión Proyecto:</label>
+        <textarea name="misionProyecto" id="inputmisionProyecto" aria-checked="true" required
+            maxlength="1000">{{misionProyecto}}</textarea>
+
+    </div>
+    <div id="inputVisionProyecto">
+        <label>Visión Proyecto:</label>
+        <textarea name="visionProyecto" id="inputvisionProyecto" aria-checked="true" required
+            maxlength="1000">{{visionProyecto}}</textarea>
+
+    </div>
+{{/each}}
+{{#each objetivos}}
+
+    <div id="objetivos">
+        <textarea name="objetivos" id="Objetivos" maxlength="2500">{{objetivosProyecto}}</textarea>
+    </div>
+
+
+    <div id="inputCausasProyecto">
+        <label for="causasProyecto">Causas Proyecto:</label>
+        <textarea name="causasProyecto" id="inputcausasProyecto" aria-checked="true" required
+            maxlength="1000">{{causasProyecto}}</textarea>
+
+    </div>
+    <div id="inputEfectosProyecto">
+        <label for="efectosProyecto">Efectos Proyecto:</label>
+        <textarea name="efectosProyecto" id="inputefectosProyecto" aria-checked="true" required
+            maxlength="1000">{{efectosProyecto}}</textarea>
+    </div>
+    {{/each}}
+    <div id="button">
+        <button type="submit">Actualizar</button>
+    </div>
+
+</form> 

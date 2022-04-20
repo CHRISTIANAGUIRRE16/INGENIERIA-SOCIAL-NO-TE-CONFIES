@@ -2,41 +2,69 @@
 <div id="fond">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/proyecto/proyectoAgregar" method="post" TYPE="text/css" MEDIA=screen>
+<form action="/proyecto/proyectoAgregar/" method="post" TYPE="text/css" MEDIA=screen>
 
-        <div id="inputNombreProyecto">
-            <label for="nombreProyecto">Nombre Proyecto:</label>
-            <input type="text" name="nombreProyecto" id="inputNombreProyecto">
-        </div>
-        <div id="inputdescripcionProyecto">
-            <label for="descripcionProyecto">Descripción Proyecto:</label>
-            <input type="string (2000)" name="descripcionProyecto:" id="inputdescripcionProyecto">
-        </div>
-        <div id="inputMisionProyecto">
-            <label for="misionProyecto">Misión Proyecto:</label>
-            <input type="string (1000)" name="misionProyecto" id="inputMisionProyecto">
-        </div>
-        <div id="inputVisionProyecto">
-            <label for="visionProyecto">Visión Proyecto:</label>
-            <input type="string (1000)" name="visionProyecto" id="inputVisionProyecto">
-        </div>
-       
+    <div id="titulo">
+        <label>
+            {{#each idMax}}
+            Agregar N:
+            <input type="text" name="idProyectos" id="numero" value="{{'MAX(idProyectos)'}}">
+            {{/each}}
+        </label>
+    </div>
+    <div id="inputNombreProyecto">
+        <label for="nombreProyecto">Nombre Proyecto:</label>
+        <input type="text" name="nombreProyecto" id="inputNombreProyecto">
+    </div>
+    <div id="inputDescripcionProyecto">
+        <label>Descripción Proyecto:</label>
+        <textarea name="descripcionProyecto" id="inputdescripcionProyecto" aria-checked="true" required
+            maxlength="2000"></textarea>
 
-       <div id="inputObjetivosProyecto">
-            <label for="objetivosProyecto">Objetivos Proyecto:</label>
-            <input type="string" name="objetivosProyecto" id="inputObjetivosProyecto">
-        </div>
-        <div id="inputCausasProyecto">
-            <label for="causasProyecto">Causas Proyecto:</label>
-            <input type="string (2000)" name="causasProyecto" id="inputCausasProyecto">
-        </div>
-         <div id="inputEfectosProyecto">
-            <label for="efectosProyecto">Efectos Proyecto:</label>
-            <input type="string (1000)" name="efectosProyecto" id="inputEfectosProyecto">
-        </div> 
+    </div>
+    <div id="inputMisionProyecto">
+        <label>Misión Proyecto:</label>
+        <textarea name="misionProyecto" id="inputmisionProyecto" aria-checked="true" required
+            maxlength="1000"></textarea>
+
+    </div>
+    <div id="inputVisionProyecto">
+        <label>Visión Proyecto:</label>
+        <textarea name="visionProyecto" id="inputvisionProyecto" aria-checked="true" required
+            maxlength="1000"></textarea>
+
+    </div>
+    <div id="objetivos">
+        <label>Objetivos:</label>
+        <input type="text" id="numeros" name="numeros" placeholder="Ingrese su número de objetivos" checked>
+    </div>
+
+    <div id="listaObjetivos"></div>
+
+    <div id="Unico">
+        <textarea name="unico" id="unico" maxlength="2500"></textarea>
+    </div>
+
+    <div id="boton">
+        <button type="button" onclick="objetivos.crear()">Crear Objetivos</button>
+    </div>
+
+    <div id="inputCausasProyecto">
+        <label for="causasProyecto">Causas Proyecto:</label>
+        <textarea name="causasProyecto" id="inputcausasProyecto" aria-checked="true" required
+            maxlength="1000"></textarea>
+
+    </div>
+    <div id="inputEfectosProyecto">
+        <label for="efectosProyecto">Efectos Proyecto:</label>
+        <textarea name="efectosProyecto" id="inputefectosProyecto" aria-checked="true" required
+            maxlength="1000"></textarea>
+    </div>
+    <div id="button">
+        <button type="submit">Guardar</button>
+    </div>
     </div>
 </form>
 
 <script src="/js/numero.js"></script>
 <script src="/js/objetivos.js"></script>
- 
