@@ -3,10 +3,10 @@ const passport =require("passport")
 
 loginControlador.mostrar = (req, res) =>{
     res.render("login/login");
-}
+} 
 
 loginControlador.login = passport.authenticate("local.signin",{
-    successRedirect: "/proyecto/agregar/",
+    successRedirect: "/layouts/main/",
     failureRedirect: "/login",
     failureFlash: true
 }) 
