@@ -14,10 +14,11 @@ body{
 }
 #tPrincipal{
     position: absolute;
-    top: 19.7%;
-    left: 24%;
+    top: 15.7%;
+    left: 16.5%;
     color: whitesmoke;
-   zoom: 200%;
+   zoom: 150%;
+   text-align: center;
 }
 #titulo{
         position: absolute;
@@ -76,7 +77,7 @@ body{
     padding: 2%;
     padding-right: 1.8%;
     padding-top: 1%;
-    padding-bottom: 1.5%;
+    padding-bottom: 1.95%;
 }
 #iEmail{
     position: absolute;
@@ -86,7 +87,7 @@ body{
     background-color: rgba(94, 109, 125, 0.295);
     padding: 2%;
     padding-top: 0.2%;
-    padding-bottom: 0.1%;
+    padding-bottom: 0.53%;
     
     padding-right: 3.4%;
     
@@ -100,7 +101,7 @@ body{
     padding: 2%;
     padding-right: 2.350%;
     padding-top: 1.5%;
-    padding-bottom: 1%;
+    padding-bottom: 1.45%;
 }
 #iContraseña{
     position: absolute;
@@ -110,16 +111,15 @@ body{
     background-color: rgba(94, 109, 125, 0.295);
     padding: 2%;
     padding-top: 1%;
-    padding-bottom: 4.1%;
+    padding-bottom: 4.5%;
     padding-right: 1.5%;
     padding-left: 1%;
 }
 
 #imagen img {
     position: absolute;
-    top: 79% ;
-    left: 63%;
-    width: 10%;
+    top: 10% ;
+    left: 0%;
+    width: 15%;
     opacity: 0.5;
-    border-color: black;
 }
