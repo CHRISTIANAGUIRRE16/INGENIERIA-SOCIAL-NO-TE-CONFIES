@@ -2,19 +2,21 @@
 <div id="fond">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/foroAgregar" method="post" TYPE="text/css" MEDIA=screen>
-    <div id="Foro">
-        <div id="temaForo"> 
-            <h2>Escribir tema</h2>
-        </div>
-        <div id="">
-            <input name="username" id="usuario" type="text" placeholder="nombre usuario">
-        </div>
-        <div id="Contraseña">
-            <input name="password" id="contraseña" type="password" placeholder="contraseña">
-        </div>
-        <div id="button">
-            <button type="submit">INGRESAR</button>
-        </div>
+<form action="foroAgregar" method="post" TYPE="text/css" MEDIA=screen>
+  <div id="iForo">
+        <label for="foro">Ingresar foro</label>
+        <input name="foro" id="foro" type="text" placeholder="foro">
+    </div>
+    <div id="temaForo">
+        <label for="ingresar Tema">Ingresar foro</label>
+        <input name="temaforo" id="temaForo" type="text" placeholder="temaForo">
+    </div>
+    <div id="fechaForo">
+        <label for="ingresar Fecha">Ingresar fecha</label>
+        <input name="fecha" id="fecha" type="text" placeholder="fecha">
+    </div>
+    <div id="horaFin">
+        <label for="ingresar Hora">Ingresar Hora Final</label>
+        <input name="horaFin" id="horaFin" type="text" placeholder="horaFin">
     </div>
 </form>
