@@ -2,17 +2,17 @@
 <div id="fond">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/recomendacionesAgregar" method="post" TYPE="text/css" MEDIA=screen>
+<form action="/recomendaciones/recomendacionesAgregar" method="post" TYPE="text/css" MEDIA=screen>
     <div id="tRecomendaciones">
         <label>
             {{#each idMax}}
-            Agregar Experiencias:
-            <input type="text" name="idRecomendaciones" id="numero" value="{{'MAX(idExperiencias)'}}">
+            Agregar Recomendaciones:
+            <input type="text" name="idRecomendaciones" id="numero" value="{{'MAX(idRecomendaciones)'}}">
             {{/each}}
         </label>
-        <div id="iRecomendaciones">
+        <div id="tRecomendaciones">
             <label for="recomendaciones">Ingresar recomendaciones</label>
-            <input name="recomendaciones" id="recomendaciones" type="text" placeholder="recomendaciones">
+            <input name="recomendaciones" id="Trecomendaciones" type="text" placeholder="recomendaciones">
         </div>
     
         <div id="tDescripcion">
