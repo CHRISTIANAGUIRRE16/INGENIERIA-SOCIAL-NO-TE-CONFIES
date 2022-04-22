@@ -5,6 +5,22 @@
 <form action="/consejods/consejosAgregar" method="post" TYPE="text/css" MEDIA=screen>
 
 <div id="tConsejo">
-    <label>Tema de Consejo</label>
-    <input name="consejo" id="tConsejo" type="text" placeholder="nombre consejo">
-</div>
+        <label>
+            {{#each idMax}}
+            Agregar Consejo:
+            <input type="text" name="idConsejos" id="numero" value="{{'MAX(idConsejos)'}}">
+            {{/each}}
+        </label>
+    </div>
+
+    <div id="boton">
+        <button type="button" onclick="consejo.crear()">Crear Consejo</button>
+    </div>
+
+    <div id="button">
+        <button type="submit">Guardar</button>
+    </div>
+    </div>
+</form>
+
+

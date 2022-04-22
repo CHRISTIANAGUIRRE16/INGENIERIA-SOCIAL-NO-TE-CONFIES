@@ -2,21 +2,42 @@
 <div id="fondo">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/conferiencias/conferenciasAgregar" method="post" TYPE="text/css" MEDIA=screen> 
+<form action="/conferencias/conferenciasAgregar" method="post" TYPE="text/css" MEDIA=screen> 
 
-<div id="tTemaConferencia">
-    <label>Tema Conferencias</label>
-    <input name="temaConferencia" id="tTemaConferencia" type="text" placeholder="temaConferencia">
-</div>
-<div id="tDescripcionConferencia">
-    <label>Descripción de Conferencias</label>
-    <input name="descripcionConferencia" id="tDescripcionConferencia" type="text" placeholder="descripcionConferencia">
-</div>
-<div id="tFechaConferencia">
-    <label>Fecha de Conferencia</label>
-    <input name="fechaConferencia" id="tFechaConferencia" type="text" placeholder="fechaConferencia">
-</div>
-<div id="tDireccionConferencia">
-    <label>Dirección de Conferencia</label>
-    <input name="direccionConferencia" id="tDireccionConferencia" type="text" placeholder="direccionConferencia">
-</div>
+<div id="tTemaConferencias">
+        <label>
+            {{#each idMax}}
+            Agregar Tema Conferencias:
+            <input type="text" name="idConferencia" id="numero" value="{{'MAX(idConferencia)'}}">
+            {{/each}}
+        </label>
+    </div>
+
+    <div id="tDescripcionConferencia">
+        <label>Descripción conferiencias:</label>
+        <textarea name="tDescripcionConferencia" id="TDescripcionConferencia" aria-checked="true" required
+            maxlength="2000"></textarea>
+
+    </div>
+
+    <div id="tFechaConferencia">
+        <label>Fecha Conferiencias:</label>
+        <input type="text" name="fechaConferencia" id="TFechaConferencia">
+    </div>
+
+    <div id="tDireccionConferencia">
+        <label>Dirección Conferiencia:</label>
+        <textarea name="direccionConferencia" id="TDireccionConferencia" aria-checked="true" required
+            maxlength="1000"></textarea>
+
+    <div id="boton">
+        <button type="button" onclick="conferencias.crear()">Crear Conferencias</button>
+    </div>
+
+    <div id="button">
+        <button type="submit">Guardar</button>
+    </div>
+    </div>
+</form>
+
+

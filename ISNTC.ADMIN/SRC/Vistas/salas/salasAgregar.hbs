@@ -5,10 +5,27 @@
 <form action="/salas/salasAgregar" method="post" TYPE="text/css" MEDIA=screen>
 
 <div id="tNombreSalas">
-    <label>Nombre Salas</label>
-    <input name="nombreSalas" id="tNombreSalas" type="text" placeholder="nombreSalas">
-</div>
-<div id="tCapacidadSalas">
-    <label>Capacidad Salas</label>
-    <input name="capacidadSalas" id="tCapacidadSalas" type="text" placeholder="capacidadSalas">
-</div>
+        <label>
+            {{#each idMax}}
+            Agregar Nombre Salas:
+            <input type="text" name="idSalas" id="numero" value="{{'MAX(idSalas)'}}">
+            {{/each}}
+        </label>
+    </div>
+
+    <div id="tCapacidadSalas">
+        <label>Capacidad de Salas:</label>
+        <input type="text" name="capacidadSalas" id="TCapacidadSalas">
+    </div>
+
+    <div id="boton">
+        <button type="button" onclick="salas.crear()">Crear Salas</button>
+    </div>
+
+    <div id="button">
+        <button type="submit">Guardar</button>
+    </div>
+    </div>
+</form>
+
+
