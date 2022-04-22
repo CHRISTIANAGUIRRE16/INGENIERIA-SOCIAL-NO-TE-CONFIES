@@ -7,6 +7,9 @@ comentariosControlador.mostrar = async (req, res) => {
     res.render("comentarios/comentariosAgregar", { idMax });
 }
 
-
+comentariosControlador.enviar=async(req,res)=>{
+    const id = req.user.idUsuarios
+    const{idComentarios,comentarios}=req.body
+}
 
 module.exports=comentariosControlador
