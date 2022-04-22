@@ -5,7 +5,7 @@ const { mostrar}=require("../Controladores/comentariosControlador")
 
 rutas.get('/comentariosAgregar/', mostrar)
 rutas.post('/comentariosLista/', enviar)
-rutas.get('/comentariosEditar/:id', traer)
+rutas.get('/comentariosEditar/', traer)
 
 
 
