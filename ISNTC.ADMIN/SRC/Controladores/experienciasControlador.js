@@ -7,4 +7,8 @@ experienciasControlador.mostrar = async (req, res) => {
     res.render("experiencias/experienciasAgregar", { idMax });
 }
 
+experienciasControlador.enviar=async(req,res)=>{
+    const id = req.user.idExperiencias
+    const{idExperiencias,temaExperiencias,fechaExperiencias,detalleExperiencias}=req.body
+}
 module.exports=experienciasControlador

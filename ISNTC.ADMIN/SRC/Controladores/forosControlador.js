@@ -7,4 +7,8 @@ forosControlador.mostrar = async (req, res) => {
     res.render("foros/forosAgregar", { idMax });
 }
 
+forosControlador.enviar=async(req,res)=>{
+    const id = req.user.idForos
+    const{idForos,temaForo,fecha,horaFin,comentariosDetalleForo}=req.body
+}
 module.exports=forosControlador
