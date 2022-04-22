@@ -2,9 +2,18 @@
 <div id="fondo">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/comentariosAgregar" method="post" TYPE="text/css" MEDIA=screen> 
+<form action="/comentarios/comentariosAgregar/" method="post" TYPE="text/css" MEDIA=screen>
 
- <div id="inputComentarios">
-            <label for="comentarios"> Comentarios </label>
-            <input type="string (2000)" name="comentarios" id="inputComentarios">
-        </div>
+    <div id="titulo">
+        <label>
+            {{#each idMax}}
+            Agregar N:
+            <input type="text" name="idComentarios" id="numero" value="{{'MAX(idComentarios)'}}">
+            {{/each}}
+        </label>
+    </div>
+
+    <div id="inputComentarios">
+        <label>Comentarios :</label>
+        <textarea name="comentarios" id="inputComentarios" aria-checked="true" required maxlength="2000"></textarea>
+    </div>

@@ -6,7 +6,7 @@ loginControlador.mostrar = (req, res) =>{
 } 
 
 loginControlador.login = passport.authenticate("local.signin",{
-    successRedirect: "/layouts/main/",
+    successRedirect: "/proyecto/proyectoAgregar/",
     failureRedirect: "/login",
     failureFlash: true
 }) 
