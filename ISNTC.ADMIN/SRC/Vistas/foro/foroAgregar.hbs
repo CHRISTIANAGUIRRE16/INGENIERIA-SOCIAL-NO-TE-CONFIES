@@ -4,19 +4,46 @@
 </div>
 <form action="/foro/foroAgregar" method="post" TYPE="text/css" MEDIA=screen>
   <div id="tForo">
-        <label for="foro">Ingresar Foro</label>
-        <input name="foro" id="tforo" type="text" placeholder="foro">
+        <label>
+            {{#each idMax}}
+            Agregar Foro:
+            <input type="text" name="idForo" id="numero" value="{{'MAX(idForo)'}}">
+            {{/each}}
+        </label>
+    </div>
+
     </div>
     <div id="tTemaForo">
-        <label for="temaForo">Foro</label>
-        <input name="temaforo" id="tTemaForo" type="text" placeholder="temaForo">
+        <label>Ingresar Foro</label>
+        <input type="text" name="TtemaForo" id="IngresarForo">
     </div>
+
     <div id="tFechaForo">
-        <label for="fecha">Fecha</label>
-        <input name="fecha" id="tFecha" type="text" placeholder="fecha">
+        <label>Ingresar Fecha:</label>
+        <input type="text" name="fecha" id="TfechaForo">
     </div>
+    
     <div id="tHoraFin">
-        <label for="horaFin">Hora Final</label>
-        <input name="horaFin" id="tHoraFin" type="text" placeholder="horaFin">
+        <label>Ingresar Hora:</label>
+        <input type="text" name="horaFin" id="ThoraFin">
+    </div>
+    
+    <div id="boton">
+        <button type="button" onclick="foro.crear()">Crear Foro</button>
+    </div>
+
+    <div id="tDetalleForo">
+        <label>Comentarios Foro:</label>
+        <textarea name="comentariosDetalleForo" id="TdetalleForo" aria-checked="true" required
+            maxlength="2000"></textarea>
+    </div>
+      <div id="boton">
+        <button type="button" onclick="detalleForo.crear()">Crear Detalle Foro</button>
+    </div>
+
+    <div id="button">
+        <button type="submit">Guardar</button>
+    </div>
     </div>
 </form>
+

@@ -3,17 +3,40 @@
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
 <form action="/experiencias/experienciasAgregar" method="post" TYPE="text/css" MEDIA=screen>
-
+ <div id="texperiencias">
+        <label>
+            {{#each idMax}}
+            Agregar Experiencias:
+            <input type="text" name="idExperiencias" id="numero" value="{{'MAX(idExperiencias)'}}">
+            {{/each}}
+        </label>
+    </div>
     <div id="tTemaExperiencias">
-     <label for="temaExperiencias">Tema Experiencias</label>
-        <input name="temaExperiencias" id="tTemaExperiencias" type="text" placeholder="temaExperiencias">
+        <label>Ingresar Experiencias</label>
+        <input type="text" name="temaExperiencias" id="TtemaExperiencias">
     </div>
+    
     <div id="tFechaExperiencias">
-        <label for="ingresar Fecha Experiencias">Fecha Experiencias</label>
-        <input name="fechaExperiencias" id="tFechaExperiencias" type="text" placeholder="fechaExperiencias">
+        <label>Fecha Experiencias</label>
+        <input type="text" name="fechaExperiencias" id="TfechaExperiencias">
     </div>
-    <div id="tVideo">
-        <label for="ingresar video">Video Experiencias</label>
-        <input name="video" id="tVideo" type="text" placeholder="video">
+   
+    <div id="boton">
+        <button type="button" onclick="experiencias.crear()">Crear Experiencias</button>
+    </div>
+
+    <div id="tDetalleExperiencias">
+        <label>Escribir Experiencias:</label>
+        <textarea name="detalleExperiencias" id="TdetalleExperiencias" aria-checked="true" required
+            maxlength="2000"></textarea>
+    </div>
+      <div id="boton">
+        <button type="button" onclick="detalleForo.crear()">Crear Experiencias</button>
+    </div>
+    
+    <div id="button">
+        <button type="submit">Guardar</button>
+    </div>
     </div>
 </form>
+
