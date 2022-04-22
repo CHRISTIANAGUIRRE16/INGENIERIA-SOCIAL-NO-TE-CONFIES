@@ -3,6 +3,15 @@
     top: 10% ;
     left: 0%;
     width: 15%;
-    opacity: 0.5;
-    
+    opacity: 0.5;   
+}
+#titulo{
+    position: absolute;
+    top:10% ;
+    left:10% ;
+}
+#inputNombreProyecto{
+    position: absolute;
+    top: 10%;
+    left:10% ;
 }
