@@ -6,10 +6,7 @@ const experiencias = (sequelize, type)=>{
             autoIncrement: true
         },
         temaExperiencias: type.STRING,
-       fechaExperiencias: type.STRING,
-       videoExperiencias: type.STRING,
-      
-        
+       fechaExperiencias: type.STRING,  
         
         creacionExperiencias:{
             type: 'TIMESTAMP',
