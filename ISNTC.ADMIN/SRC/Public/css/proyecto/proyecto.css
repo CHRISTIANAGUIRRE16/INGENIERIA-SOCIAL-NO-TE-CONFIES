@@ -7,11 +7,87 @@
 }
 #titulo{
     position: absolute;
-    top:10% ;
-    left:10% ;
+    top:12% ;
+    left:25% ;
+    color: whitesmoke;
+  padding: 1%;
+    background-color: black;
 }
 #inputNombreProyecto{
     position: absolute;
-    top: 10%;
+    top: 21%;
+    left:25% ;
+    color: whitesmoke;
+    padding: 1%;
+    padding-right:2.49%;
+    background-color: black;
+}
+#inputDescripcionProyecto{
+    position: absolute;
+    top: 29.5%;
+    left:25% ;
+    color: whitesmoke;
+    padding: 1%;
+    padding-right:0.78%;
+    background-color: black;
+}
+#inputMisionProyecto{
+    position: absolute;
+    top: 42.9%;
+    left:25% ;
+    padding:1%;
+    padding-right:3.35%;
+    background-color: black;
+    color: whitesmoke;
+}
+#inputVisionProyecto{
+    position: absolute;
+    top: 55%;
+    left:25% ;
+    padding:1%;
+    padding-right:3.6%;
+    background-color: black;
+    color: whitesmoke;
+}
+#objetivos{
+    position: absolute;
+    top: 68.41%;
+    left:25% ;
+    padding:1%;
+    padding-right:6.65%;
+    background-color: black;
+    color: whitesmoke;
+}
+#boton{
+    position: absolute;
+    top: 65%;
+    left:18% ;
+    color: whitesmoke;
+}
+#inputCausasProyecto{
+    position: absolute;
+    top: 77.5%;
+    left:25%;
+    padding:1%;
+    padding-right:2.65%;
+    background-color: black;
+    color: whitesmoke;
+}
+#inputEfectosProyecto{
+    position: absolute;
+    top: 80%;
     left:10% ;
+    color: whitesmoke;
+}
+#button{
+    position: absolute;
+    top: 90%;
+    left:20% ;
+    color: whitesmoke;
+}
+#listaObjetivos{
+    position: absolute;
+    top: 55%;
+    left:20% ;
+    color: whitesmoke;
 }
