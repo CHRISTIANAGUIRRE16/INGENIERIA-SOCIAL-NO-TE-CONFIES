@@ -7,6 +7,7 @@ const passport = require('passport');
 const flash = require('connect-flash'); 
 const mysqlstore = require('express-mysql-session')(session);
 const bodyparser = require('body-parser');
+const fileUpload = require("express-fileupload"); 
 
 const { database } = require('./keys'); 
 
@@ -28,6 +29,7 @@ app.set('view engine', '.hbs');
 
 
 //midlewars
+app.use(fileUpload()); 
 app.use(morgan('dev'));
 app.use(bodyparser.urlencoded({
     extended: false
@@ -63,5 +65,6 @@ app.use(require("./rutas/indexRutas"))
 app.use(require("./rutas/login.rutas"))
 app.use("/proyecto",require("./rutas/proyectoRutas"))
 app.use("/comentarios",require("./rutas/comentariosRutas"))
+app.use("/encuesta",require("./rutas/encuestaRutas"))
  
 module.exports = app;

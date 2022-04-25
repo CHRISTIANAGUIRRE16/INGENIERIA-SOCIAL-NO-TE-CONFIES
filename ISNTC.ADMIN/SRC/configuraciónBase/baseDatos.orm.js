@@ -28,6 +28,7 @@ const rolModelo=require("../Modelos/rol")
 const conferenciasModelo=require("../Modelos/conferencias")
 const salasModelo=require("../Modelos/salas")
 const detalleRolModelo=require("../Modelos/detalleRol")
+const encuestaModelo=require("../Modelos/encuesta")
 const detalleExperienciasModelo=require("../Modelos/detalleExperiencias");
 
 
@@ -77,7 +78,7 @@ const consejos=consejosModelo(sequelize, Sequelize)
 const rol=rolModelo(sequelize, Sequelize)
 const detalleRol=detalleRolModelo(sequelize, Sequelize)
 const conferencias=conferenciasModelo(sequelize, Sequelize)
-
+const encuesta=encuestaModelo(sequelize, Sequelize)
 
 
 proyecto.hasMany(detalleProyecto)
@@ -146,6 +147,9 @@ foro.belongsTo(cliente)
 cliente.hasMany(conferencias)
 conferencias.belongsTo(cliente)
 
+usuario.hasMany(encuesta)
+encuesta.belongsTo(usuario)
+
 
 
 
@@ -166,6 +170,7 @@ module.exports = {
    detalleRol,
    conferencias,
    salas,
+   encuesta,
     
  
 }

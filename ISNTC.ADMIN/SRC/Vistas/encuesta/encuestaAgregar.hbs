@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/">
+<div id="logo">
+    <img src="/imagenes/logo.png" alt="">
+</div>
+<form action="/encuesta/encuestaAgregar/" method="post" TYPE="text/css" enctype="multipart/form-data" MEDIA=screen>
+<div id="titulo">
+    <label>Ingresar Encuesta</label>
+    {{#each idMax}}
+    <input value="{{'MAX(idEncuestas)'}}" type="text" name="numero" id="numero">
+    {{/each}}
+</div>
+<div id="encuesta">
+    <input type="file" name="encuestas">
+</div>
+<div>
+    <button type="submit"> Guardar</button>
+</div>
+
+
+
+</form>
+<script src="/js/numero.js"></script>

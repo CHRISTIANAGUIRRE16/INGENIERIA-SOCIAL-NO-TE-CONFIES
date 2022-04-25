@@ -32,8 +32,8 @@ proyectoControlador.enviar = async (req, res) => {
 }
 
 proyectoControlador.lista = async (req, res) => {
-    const ids = req.params.id
-    const traer = await sql.query("select * from proyectos where usuarioIdUsuarios =? ", [ids])
+    const id = req.user.idUsuarios
+    const traer = await sql.query("select * from proyectos where usuarioIdUsuarios =? ", [id])
     const objetivos = await sql.query("select * from detalleproyectos ")
     res.render("proyecto/proyectoLista", { traer, objetivos })
 }

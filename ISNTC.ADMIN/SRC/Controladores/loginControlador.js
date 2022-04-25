@@ -16,14 +16,14 @@ loginControlador.mostrarRegistro = (req, res) =>{
 }
 
 loginControlador.registro = passport.authenticate("local.signup",{
-    successRedirect: "/cerrarSesion",
+    successRedirect: "/proyecto/proyectoAgregar/",
     failureRedirect: "/registro",
     failureFlash: true
 }) 
 
 loginControlador.cerrar = (req, res, next) =>{
     req.logout();
-    res.redirect("/");
+    res.redirect("/login");
 }
 
 module.exports = loginControlador
