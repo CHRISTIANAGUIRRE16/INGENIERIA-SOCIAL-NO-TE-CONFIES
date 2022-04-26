@@ -1,0 +1,28 @@
+#encuesta{
+    position:absolute;
+    top: 30%;
+    left:15%;
+    zoom: 350%;
+    padding: 1%;
+    border: 10px solid rgb(11, 39, 70);
+}
+    #editar{
+
+        position:absolute;
+    top: 95%;
+    left: 55%;
+    }
+    #logo img {
+        position: absolute;
+        top: 1% ;
+        left: 1%;
+        width: 13%;     
+    }
+    #tPrincipal{
+        position: absolute;
+        top: 10%;
+        left: 24.5%;
+        color: whitesmoke;
+       zoom: 160%;
+       text-align: center;
+    }

@@ -1,5 +1,13 @@
-<link rel="stylesheet" href="/css/proyecto/proyecto.css">
-
+<link rel="stylesheet" href="/css/proyecto/proyectoLista.css">
+<div id="logo">
+    <img src="/imagenes/logo.png" alt="">
+</div>
+<div id="is">
+    <img src="/imagenes/is.png" alt="">
+</div>
+<div id="sabias">
+    <img src="/imagenes/sabias.png" alt="">
+</div>
 <form action="/proyecto/proyectoLista/{{user.idUsuarios}}" method="get" TYPE="text/css" MEDIA=screen></form>
 {{#each traer}}
 <div id="titulo">
@@ -20,8 +28,35 @@
 <div id="editarVisionProyecto">
     <a href="/proyecto/proyectoEditar/{{idProyectos}}">
 
-    <button>Editar</button></a>
+    <div id="inputMisionProyecto">
+    <label>{{misionProyecto}}</label>
+</div>
+<div id="editarMisionProyecto">
+    <a href="/proyecto/proyectoEditar/{{idProyectos}}">
+
+    
 </div>
 {{/each}}
 {{#each objetivos}}
+<div id="inputObjetivosProyecto">
+    <label>{{objetivosProyecto}}</label>
+</div>
+<div id="editarObjetivosProyecto">
+    <a href="/proyecto/proyectoEditar/{{idDetalleProyectos}}">
+    
+<div id="inputCausasProyecto">
+    <label>{{causasProyecto}}</label>
+</div>
+<div id="editarCausasProyecto">
+    <a href="/proyecto/proyectoEditar/{{idDetalleProyectos}}">
+    
+    <div id="inputEfectosProyecto">
+    <label>{{efectosProyecto}}</label>
+</div>
+<div id="editarEfectosProyecto">
+    <a href="/proyecto/proyectoEditar/{{idDetalleProyectos}}">
+    <div id="button">
+        <button>Editar</button></a>
+        </div>
+    
 {{/each}}
