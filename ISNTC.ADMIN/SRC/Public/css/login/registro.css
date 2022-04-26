@@ -14,7 +14,7 @@ body{
 }
 #tPrincipal{
     position: absolute;
-    top: 15.7%;
+    top: 82%;
     left: 16.5%;
     color: whitesmoke;
    zoom: 150%;
@@ -22,55 +22,59 @@ body{
 }
 #titulo{
         position: absolute;
-        top:35% ;
+        top:21.7% ;
         left: 19%;
         color: whitesmoke;
         background-color: rgba(94, 109, 125, 0.295);
-        
         padding: 6px;
-        padding-left: 10.1% ;
-        padding-right:  8.7% ;
+        padding-top: 2%;
+        padding-left: 15.1% ;
+        padding-right:  13.7% ;
 }
 #Nombre{
     position: absolute;
-    top: 41.7%;
+    top: 32.3%;
     left: 32%;
     background-color: rgba(94, 109, 125, 0.295);
     padding: 18.5px;
+    padding-right:11% ;
 }
 #Email{
     position: absolute;
-    top: 50.1%;
+    top: 41.1%;
     left: 32%;
     background-color: rgba(94, 109, 125, 0.295);
     padding: 18.5px;
+    padding-right:11% ;
 }
 #Usuario{
     position: absolute;
-    top: 58.5%;
+    top: 50%;
     left: 32%;
     background-color: rgba(94, 109, 125, 0.295);
     padding: 18.5px;
+    padding-right:11% ;
 }
 #Contraseña{
     position: absolute;
-    top: 66.8%;
+    top: 58.8%;
     left: 32%;
     background-color: rgba(94, 109, 125, 0.295);
     padding: 18.5px;
+    padding-right:11% ;
 }
 #button{
     position: absolute;
-    top: 75.1%;
+    top: 67.7%;
     left: 32%;
     background-color: rgba(94, 109, 125, 0.295);
     padding: 18.5px;
     padding-left: 3.1%;
-    padding-right: 3.15%;
+    padding-right: 13.1%;
 }
 #iNombres{
     position: absolute;
-    top: 41.7%;
+    top: 32.3%;
     left: 19%;
     color: whitesmoke;
     background-color: rgba(94, 109, 125, 0.295);
@@ -81,7 +85,7 @@ body{
 }
 #iEmail{
     position: absolute;
-    top: 51.9%;
+    top: 43.1%;
     left: 19%;
     color: whitesmoke;
     background-color: rgba(94, 109, 125, 0.295);
@@ -94,7 +98,7 @@ body{
 }
 #iUsuario{
     position: absolute;
-    top: 57.8%;
+    top: 49.2%;
     left: 19%;
     color: whitesmoke;
     background-color: rgba(94, 109, 125, 0.295);
@@ -105,7 +109,7 @@ body{
 }
 #iContraseña{
     position: absolute;
-    top: 68.1%;
+    top: 60.1%;
     left: 19%;
     color: whitesmoke;
     background-color: rgba(94, 109, 125, 0.295);
@@ -121,5 +125,11 @@ body{
     top: 10% ;
     left: 0%;
     width: 15%;
-    opacity: 0.5;
+    opacity: 0.5;  
+}
+#button2{
+    position: absolute;
+    top: 77.1%;
+    left: 48%;
+    background-color: rgba(94, 109, 125, 0.295);
 }

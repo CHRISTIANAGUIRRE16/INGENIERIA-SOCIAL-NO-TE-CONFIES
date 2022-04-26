@@ -1,4 +1,4 @@
-nav{
+nav {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -8,233 +8,107 @@ nav{
     width: 100%;
     height: 100%;
     max-width: 100%;
-    max-height:  60px;
+    max-height: 60px;
     display: block;
     cursor: pointer;
     overflow: hidden;
+    padding: 2%;
 }
-nav a{
+
+nav a {
     color: whitesmoke;
 }
 
-#nav1{
+#nav1 {
     position: absolute;
-    top: 14%;
-    left: 0.5%;
+    top: -10%;
+    zoom: 200%;
+    left: 2%;
 }
 
-#nav2{
+#nav2 {
     position: absolute;
-    top: 14%;
-    left: 13%;
+    top: -10%;
+    zoom: 200%;
+    left: 35%;
 }
 
-#nav3{
+#nav3 {
     position: absolute;
-    top: 14%;
-    left: 26%;
+    top: -10%;
+    zoom: 200%;
+    left: 70%;
 }
-
-#nav4{
-    position: absolute;
-    top: 14%;
-    left: 36%;
-}
-
-#nav5{
-    position: absolute;
-    top: 14%;
-    left: 49%;
-}
-#nav6{
-    position: absolute;
-    top: 14%;
-    left: 56%;
-}
-#nav7{
-    position: absolute;
-    top: 14%;
-    left: 66%;
-}
-#nav8{
-    position: absolute;
-    top: 14%;
-    left: 82%;
-}
-#nav9{
-    position: absolute;
-    top: 14%;
-    left: 90%;
-}
-
-
 @media (max-width: 1100px) {
-    #nav1{
+    #nav1 {
         left: 1%;
     }
 
-    #nav2{
+    #nav2 {
         left: 17%;
     }
 
-    #nav3{
+    #nav3 {
         left: 26%;
     }
-    #nav4{
-        left: 37.5%;
-    }
-    #nav5{
-        left: 72%;
-    }
-    #nav6{
-        left: 72%;
-    }
-    #nav7{
-        left: 77%;
-    }
-    #nav8{
-        left: 82%;
-    }
-    #nav9{
-        left: 92%;
-    }
-}
+    @media (max-width: 1030px) {
+        nav {
+            width: 100%;
+            height: 100%;
+            max-width: 14%;
+            max-height: 100%;
+            display: block;
+            font-size: 80%;
+            cursor: pointer;
+            overflow: hidden;
+            text-align: center;
+        }
 
-@media (max-width: 1030px){
-    nav{
-    width: 100%;
-    height: 100%;
-    max-width: 14%;
-    max-height:  100%;
-    display: block;
-    font-size: 80%;
-    cursor: pointer;
-    overflow: hidden;
-    text-align: center;
-    }
-    #nav1{
-        top: 0%;
-        left: 2%;
-    }
+        #nav1 {
+            top: 0%;
+            left: 2%;
+        }
 
-    #nav2{
-        top: 5%; 
-        left: 3%; 
-    }
-    
-    #nav3{
-        top: 10%;
-        left: 3%;
-    }
+        #nav2 {
+            top: 5%;
+            left: 3%;
+        }
 
-    #nav4{
-        top: 15%;
-        left: 3%;
-    }
+        #nav3 {
+            top: 10%;
+            left: 3%;
+        }
 
-    #nav5{
-        top: 20%;
-        left: 3%;
-    }
-    #nav6{
-        top: 25%;
-        left: 3%;
-    }
-    #nav7{
-        top: 30%;
-        left: 3%;
-    }
-    #nav8{
-        top: 35%;
-        left: 3%;
-    }
-    #nav9{
-        top: 40%;
-        left: 3%;
-    }
-}
+        @media (max-width: 640px) {
+            nav {
+                text-align: left;
+                font-size: 65%;
+            }
 
-@media (max-width: 640px){
-    nav{
-        text-align: left;
-        font-size: 65%;
-    }
+            #nav1 {
+                top: 0%;
+                left: 0%;
+            }
 
-    #nav1{
-        top: 0%;
-        left: 0%;
-    }
+            #nav2 {
+                top: 15%;
+                left: 0%;
+            }
 
-    #nav2{
-        top: 15%;
-        left: 0%; 
-    }
-    
-    #nav3{
-        top: 25%;
-        left: 0%;
-    }
+            #nav3 {
+                top: 25%;
+                left: 0%;
+            }
 
-    #nav4{
-        top: 35%;
-    }
+            @media (max-width: 610px) {
+                #nav1 {
+                    top: 0%;
+                }
 
-    #nav5{
-        top: 45%;
-        left: 0%;
-    }
-    #nav6{
-        top: 55%;
-        left: 0%;
-    }
-    #nav7{
-        top: 65%;
-        left: 0%;
-    }
-    #nav8{
-        top: 70%;
-        left: 0%;
-    }
-    #nav9{
-        top: 75%;
-        left: 0%;
-    }
-    
-}
+                #nav2 {
+                    top: 7%;
+                }
 
-@media (max-width: 610px){
-    #nav1{
-        top: 0%;
-    }
-
-    #nav2{
-        top: 7%;
-    }
-    
-    #nav3{
-        top: 14%;
-    }
-
-    #nav4{
-        top: 21%;
-    }
-
-    #nav5{
-        top: 28%;
-    }
-
-    #nav6{
-        top: 35%;
-        
-    }
-
-    #nav7{
-        top: 42%;
-    }
-    #nav8{
-        top: 49%;
-    }
-    #nav9{
-        top: 56%;
-    }
-}
+                #nav3 {
+                    top: 14%;
+                }

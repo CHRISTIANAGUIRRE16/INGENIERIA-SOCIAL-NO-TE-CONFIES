@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="/">
-<div id="fond">
-    <img src="/imagenes/fondo.jpeg" alt="">
-</div>
+<link rel="stylesheet" href="/css/proyecto/proyecto.css">
+
 <form action="/proyecto/proyectoLista/{{user.idUsuarios}}" method="get" TYPE="text/css" MEDIA=screen></form>
 {{#each traer}}
 <div id="titulo">
@@ -9,6 +7,19 @@
 </div>
 <div id="editar">
     <a href="/proyecto/proyectoEditar/{{idProyectos}}">
+
+<div id="inputDescripcionProyecto">
+    <label>{{descripcionProyecto}}</label>
+</div>
+<div id="editarDescripcionProyecto">
+    <a href="/proyecto/proyectoEditar/{{idProyectos}}">
+
+<div id="inputVisionProyecto">
+    <label>{{visionProyecto}}</label>
+</div>
+<div id="editarVisionProyecto">
+    <a href="/proyecto/proyectoEditar/{{idProyectos}}">
+
     <button>Editar</button></a>
 </div>
 {{/each}}

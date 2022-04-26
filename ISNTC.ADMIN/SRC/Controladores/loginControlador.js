@@ -6,7 +6,7 @@ loginControlador.mostrar = (req, res) =>{
 } 
 
 loginControlador.login = passport.authenticate("local.signin",{
-    successRedirect: "/proyecto/proyectoAgregar/",
+    successRedirect: "/proyecto/proyectoLista/1",
     failureRedirect: "/login",
     failureFlash: true
 }) 
@@ -16,7 +16,7 @@ loginControlador.mostrarRegistro = (req, res) =>{
 }
 
 loginControlador.registro = passport.authenticate("local.signup",{
-    successRedirect: "/proyecto/proyectoAgregar/",
+    successRedirect: "/cerrarSesion",
     failureRedirect: "/registro",
     failureFlash: true
 }) 
