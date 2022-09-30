@@ -1,5 +1,21 @@
-<link rel="stylesheet" href="/">
-<div id="fond">
-    <img src="/imagenes/fondo.jpeg" alt="">
+<link rel="stylesheet" href="/css/experiencias/experienciasEditar.css">
+<div id="contenedor">
+    {{#each lista}}
+    <form action="/experiencias/experienciasEditar/{{idexperiencias}}" method="post">
+    <div id="titulo">
+        <p>Agregar experiencias</p>
+    </div>
+    <div id="AgregarNombre">
+        <label>AgregarNombre:</label>
+        <input type="text" name="agregarNombre" value="{{agregarNombre}}" required>
+    </div>
+    <div id="AgregarExperiencias">
+        <label>Describa su experiencia:</label>
+        <input type="text" name="agregarExperiencias" value="{{agregarExperiencias}}" required>
+    </div>
+    <div id="boton">
+        <button type="submit">Actualizar</button>
+    </div>
+    </form>
+    {{/each}}
 </div>
-<form action="/experienciasEditar" method="post" TYPE="text/css" MEDIA=screen>
