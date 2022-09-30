@@ -2,4 +2,21 @@
 <div id="fond">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/experienciasAgregar" method="post" TYPE="text/css" MEDIA=screen>
+<div id="contenedor">
+    <form action="/experiencias/experienciasAgregar/{{user.idUsuarios}}" method="post">
+    <div id="titulo">
+        <p>Agregar experiencia</p>
+    </div>
+    <div id="AgregarNombre">
+        <label>Nombre:</label>
+        <input type="text" name="agregarNombre" required>
+    </div>
+    <div id="AgregarExperiencia">
+        <label>Codigo Tarifa Iva:</label>
+        <input type="text" name="agregarExperiencia" required>
+    </div>
+    <div id="boton">
+        <button type="submit">GUARDAR</button>
+    </div>
+    </form>
+</div>
