@@ -5,9 +5,9 @@ const experiencias = (sequelize, type) => {
             primaryKey: true,
             autoIncrement: true
         },
-        temaExperiencias: type.STRING,
-        fechaExperiencias: type.STRING,
-        videoExperiencias: type.STRING,
+        AgregarNombre: type.STRING,
+        AgregarExperiencias: type.STRING,
+        
 
 
 
