@@ -1,5 +1,30 @@
-<link rel="stylesheet" href="/">
+<link rel="stylesheet" href="/css/facturaElectronica/tarifaIva/lista.css">
 <div id="fond">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/experienciasLista" method="post" TYPE="text/css" MEDIA=screen>
+<form action="/experiencias/experienciasLista/{{user.idUsuarios}}" method="get"></form>
+<div id="contenedor">
+    <div class="row">
+        {{#each lista}}
+        <div id="tarjeta">
+            <div id="idExperiencias">
+                <p>{{agregarNombre}}</p>
+            </div>
+            <div id="nombre">
+                <p>{{agregarNombre}}</p>
+            </div>
+            <div id="experiencias">
+                <p>{{agregarExperiencias}}</p>
+            </div>
+            <div id="boton">
+                <div id="editar">
+                    <a href="/experiencias/experienciasEditar/{{idExperiencias}}"><button type="button">Editar</button></a>
+                </div>
+                <div id="eliminar">
+                    <a href="/experiencias/eliminar/{{idExperiencias}}"><button type="button">Eliminar</button></a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
