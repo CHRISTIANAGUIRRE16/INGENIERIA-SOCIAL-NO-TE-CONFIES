@@ -10,9 +10,7 @@ const conferencia = (sequelize, type)=>{
         descripcionConferencia: type.STRING,
         fechaConferencia: type.STRING,
         direccionConferencia: type.STRING,
-
         
-
         creacionConferencia:{
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
