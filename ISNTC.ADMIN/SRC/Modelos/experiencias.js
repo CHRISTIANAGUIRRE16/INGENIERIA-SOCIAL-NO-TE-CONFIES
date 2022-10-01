@@ -1,22 +1,22 @@
 const experiencias = (sequelize, type) => {
     return sequelize.define('experiencias', {
-        idExperiencias: {
+        idExperiencia: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
         AgregarNombre: type.STRING,
-        AgregarExperiencias: type.STRING,
+        AgregarExperiencia: type.STRING,
         
 
 
 
-        creacionExperiencias: {
+        creacionExperiencia: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         },
-        actualizacionExperiencias: {
+        actualizacionExperiencia: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP '),
             allowNull: false

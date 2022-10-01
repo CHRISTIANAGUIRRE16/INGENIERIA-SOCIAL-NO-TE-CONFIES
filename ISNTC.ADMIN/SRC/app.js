@@ -66,5 +66,5 @@ app.use(require("./rutas/login.rutas"))
 app.use("/proyecto",require("./rutas/proyectoRutas"))
 app.use("/comentarios",require("./rutas/comentariosRutas"))
 app.use("/encuesta",require("./rutas/encuestaRutas"))
- 
+app.use("/experiencias",require("./rutas/experienciasRutas"))
 module.exports = app;

@@ -1,19 +1,22 @@
-<link rel="stylesheet" href="/css/comentarios/comentarios.css">
-<div id="logo">
-    <img src="/imagenes/logo.png" alt="">
+<link rel="stylesheet" href="/css/comentarios/comentariosAgregar.css">
+<div id="fond">
+    <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/comentarios/comentariosAgregar/" method="post" TYPE="text/css" MEDIA=screen>
-
+<div id="contenedor">
+    <form action="/comentarios/comentariosAgregar/{{user.idUsuarios}}" method="post">
     <div id="titulo">
-        <label>
-            {{#each idMax}}
-            Agregar N:
-            <input type="text" name="idComentarios" id="numero" value="{{'MAX(idComentarios)'}}">
-            {{/each}}
-        </label>
+        <p>Agregar Comentarios</p>
     </div>
-
-    <div id="inputComentarios">
-        <label>Comentarios:</label>
-        <textarea name="comentarios" id="InputComentarios" aria-checked="true" required maxlength="2000"></textarea>
+    <div id="AgregarNombre">
+        <label>Nombre:</label>
+        <input type="text" name="agregarNombre" required>
     </div>
+    <div id="AgregarExperiencias">
+        <label>Describa su experiencia:</label>
+        <input type="text" name="agregarExperiencias" required>
+    </div>
+    <div id="boton">
+        <button type="submit">GUARDAR</button>
+    </div>
+    </form>
+</div>

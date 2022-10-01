@@ -4,17 +4,17 @@
 </div>
 <div id="contenedor">
     {{#each lista}}
-    <form action="/experiencias/experienciasEditar/{{idexperiencias}}" method="post">
+    <form action="/experiencias/experienciasEditar/{{idExperiencia}}" method="post">
     <div id="titulo">
         <p>Agregar experiencias</p>
     </div>
     <div id="AgregarNombre">
-        <label>AgregarNombre:</label>
+        <label>Agregar Nombre:</label>
         <input type="text" name="agregarNombre" value="{{agregarNombre}}" required>
     </div>
-    <div id="AgregarExperiencias">
+    <div id="AgregarExperiencia">
         <label>Describa su experiencia:</label>
-        <input type="text" name="agregarExperiencias" value="{{agregarExperiencias}}" required>
+        <input type="text" name="agregarExperiencia" value="{{agregarExperiencia}}" required>
     </div>
     <div id="boton">
         <button type="submit">Actualizar</button>
