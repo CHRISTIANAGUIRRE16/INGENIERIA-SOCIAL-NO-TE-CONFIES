@@ -28,7 +28,7 @@ proyectoControlador.enviar = async (req, res) => {
         }
     } 
     req.flash("success", "Guardado exitosamente")
-    res.redirect('proyecto/proyectoLista' + id);
+    res.redirect('/proyecto/proyectoLista/' + id);
 }
 
 proyectoControlador.lista = async (req, res) => {
@@ -66,7 +66,7 @@ proyectoControlador.editar = async (req, res) => {
         }
     }
     req.flash("success", "Actualizado exitosamente")
-    res.redirect("proyecto/proyectoLista" + id);
+    res.redirect("/proyecto/proyectoLista/" + id);
     }
 
 
