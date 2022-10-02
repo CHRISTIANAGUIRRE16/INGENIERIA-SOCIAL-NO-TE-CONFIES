@@ -1,5 +1,24 @@
-<link rel="stylesheet" href="/">
+<link rel="stylesheet" href="/css/recomendaciones/recomendacionesEditar.css">
 <div id="fond">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/recomendacionesEditar" method="post" TYPE="text/css" MEDIA=screen>
+<div id="contenedor">
+    {{#each lista}}
+    <form action="/recomendaciones/recomendacionesEditar/{{idRecomendaciones}}" method="post">
+    <div id="titulo">
+        <p>Agregar recomendación</p>
+    </div>
+    <div id="Recomendacion">
+        <label>Recomendación </label>
+        <input type="text" name="recomendación" value="{{recomendacion}}" required>
+    </div>
+    <div id="DescripcionRecomendacion">
+        <label>Ingrese su descripción sobre la recomendación</label>
+        <input type="text" name="descripcionRecomendacion" value="{{descripcionRecomendacion}}" required>
+    <div id="boton">
+        <button type="submit">Actualizar</button>
+    </div>
+    </form>
+    {{/each}}
+</div>
+

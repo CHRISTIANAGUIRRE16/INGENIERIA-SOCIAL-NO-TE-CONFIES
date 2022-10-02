@@ -1,7 +1,7 @@
 const express = require('express');
 const rutas = express.Router()
 
-const { mostrar, mandar, lista, traer, actualizar, eliminar }= require('../controladores/tarifaIva.controlador')
+const { mostrar, mandar, lista, traer, actualizar, eliminar }= require('../controladores/experienciaControlador')
 const { isLoggedIn } = require('../lib/auth')
 
 rutas.get('/experienciasAgregar/:id', isLoggedIn, mostrar)

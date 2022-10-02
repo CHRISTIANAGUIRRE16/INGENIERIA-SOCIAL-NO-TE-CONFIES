@@ -67,4 +67,6 @@ app.use("/proyecto",require("./rutas/proyectoRutas"))
 app.use("/comentarios",require("./rutas/comentariosRutas"))
 app.use("/encuesta",require("./rutas/encuestaRutas"))
 app.use("/experiencias",require("./rutas/experienciasRutas"))
+app.use("/comentarios",require("./rutas/comentariosRutas"))
+app.use("/recomendaciones",require("./rutas/recomendacionesRutas"))
 module.exports = app;

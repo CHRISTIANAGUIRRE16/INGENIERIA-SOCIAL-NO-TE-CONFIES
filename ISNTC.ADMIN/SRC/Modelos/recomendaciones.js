@@ -5,8 +5,8 @@ const recomendaciones  = (sequelize, type)=>{
             primaryKey: true,
             autoIncrement: true
         },
-        recomendación: type.STRING(2000),
-        descripciónRecomendacion: type.STRING(2000),
+        recomendacion: type.STRING(2000),
+        descripcionRecomendacion: type.STRING(2000),
         
         
         creacionRecomendaciones:{

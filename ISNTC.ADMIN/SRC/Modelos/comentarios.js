@@ -1,4 +1,4 @@
-const comentario = (sequelize, type)=>{
+const comentarios = (sequelize, type)=>{
     return sequelize.define('comentarios', {
         idComentarios: {
             type: type.INTEGER,
@@ -21,4 +21,4 @@ const comentario = (sequelize, type)=>{
     })
 }
 
-module.exports = comentario
+module.exports = comentarios

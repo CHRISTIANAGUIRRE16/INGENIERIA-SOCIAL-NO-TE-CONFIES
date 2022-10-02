@@ -1,5 +1,22 @@
-<link rel="stylesheet" href="/">
+<link rel="stylesheet" href="/css/recomendaciones/recomendacionesAgregar.css">
 <div id="fond">
     <img src="/imagenes/fondo.jpeg" alt="">
 </div>
-<form action="/recomendacionesAgregar" method="post" TYPE="text/css" MEDIA=screen>
+<div id="contenedor">
+    <form action="/recomendaciones/recomendacionesAgregar/{{user.idUsuarios}}" method="post">
+    <div id="titulo">
+        <p>Agregar recomendaciones</p>
+    </div>
+    <div id="Recomendacion">
+        <label>Recomendación</label>
+        <input type="text" name="recomendacion" required>
+    </div>
+    <div id="DescripcionRecomendacion">
+        <label>Ingrese su descripción sobre la recomendación</label>
+        <input type="text" name="descripcionRecomendacion" required>
+
+    <div id="boton">
+        <button type="submit">GUARDAR</button>
+    </div>
+    </form>
+</div>
