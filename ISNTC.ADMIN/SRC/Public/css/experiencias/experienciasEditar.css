@@ -12,3 +12,22 @@
     padding-right:2% ;
     font-style: normal;
 }
+#titulo{
+    position: absolute;
+    top:-150% ;
+    left:20% ;
+    color: whitesmoke;
+    zoom: 385%;
+    font-style:normal; 
+}
+h2{
+    background-color: whitesmoke;
+   color: black;
+   text-align: justify;
+   
+}
+
+p{
+    text-align: justify;
+}
+
