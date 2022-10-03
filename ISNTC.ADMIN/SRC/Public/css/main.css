@@ -20,17 +20,16 @@ input{
     text-align: center;
 }
 button{
-    background-color: #10959a63;
+    background-color: black;
     color: whitesmoke;
     text-align: center;
     display: block;
     cursor: pointer;
     font-size: 20px;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 button:focus{
-    border-radius: 5px solid black;
+    border-radius: 5px solid #10959a63;
 }
 a{
     text-decoration: none;
