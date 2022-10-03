@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="/css/recomendaciones/recomendacionesLista.css">
-
+<div id="logo">
+    <img src="/imagenes/logo.png" alt="">
+</div>
 <form action="/recomendaciones/recomendacionesLista/{{user.idUsuarios}}" method="get"></form>
 <div id="titulo">
         <p>Recomendaciones</p>
@@ -9,14 +11,19 @@
         {{#each lista}}
         <div id="tarjeta">
             <div id="recomendacion">
+                <h2>Tema recomendación</h2>
                 <p>{{recomendacion}}</p>
             </div>
             <div id="descripcionRecomendacion">
+                <h2>Descripción recomendación</h2>
                 <p>{{descripcionRecomendacion}}</p>
             </div>
             <div id="boton">
                 <div id="editar">
                     <a href="/recomendaciones/recomendacionesEditar/{{idRecomendaciones}}"><button type="button">Editar</button></a>
+                </div>
+                <div id="agregar">
+                    <a href="/recomendaciones/recomendacionesAgregar/{{idRecomendaciones}}"><button type="button">Agregar</button></a>
                 </div>
                 <div id="eliminar">
                     <a href="/recomendaciones/eliminar/{{idRecomendaciones}}"><button type="button">Eliminar</button></a>

@@ -7,22 +7,19 @@
     border: 10px solid rgb(11, 39, 70);
 }
     #editar{
-
-        position:absolute;
+    position:absolute;
     top: 95%;
     left: 55%;
     }
-    #logo img {
+
+   
+    #titulo{
         position: absolute;
-        top: 1% ;
-        left: 1%;
-        width: 13%;     
-    }
-    #tPrincipal{
-        position: absolute;
-        top: 10%;
-        left: 24.5%;
+        top:0% ;
+        left:20% ;
         color: whitesmoke;
-       zoom: 160%;
-       text-align: center;
+        zoom: 385%;
+        font-style:normal;
+        
+       
     }

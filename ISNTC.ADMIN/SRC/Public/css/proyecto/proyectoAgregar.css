@@ -1,96 +1,109 @@
 #logo img {
     position: absolute;
-    top: 10% ;
-    left: 0%;
-    width: 15%;
-    opacity: 0.5;   
+    top: 1% ;
+    left: 1%;
+    width: 13%;     
+}
+#is img {
+    position: absolute;
+    top: 30% ;
+    left: 5%;
+    width: 90%; 
+    height: 90%; 
+    border: 10px solid rgb(11, 39, 70); 
+}
+#sabias img {
+    position: absolute;
+    top: 145% ;
+    left: 5%;
+    width: 90%;
+    height: 110%;  
+    border: 10px solid rgb(11, 39, 70); 
 }
 #titulo{
     position: absolute;
-    top:12% ;
-    left:25% ;
-    color: whitesmoke;
+    top:16% ;
+    left:22% ;
+    color: black;
+    zoom: 425%;
   padding: 1%;
-    background-color: rgba(94, 109, 125, 0.295);
+    background-color: whitesmoke;
+    border: 3px solid rgb(11, 39, 70);
 }
-#inputNombreProyecto{
-    position: absolute;
-    top: 21%;
-    left:25% ;
-    color: whitesmoke;
-    padding: 1%;
-    padding-right:2.49%;
-    background-color: rgba(94, 109, 125, 0.295);
-}
+
 #inputDescripcionProyecto{
     position: absolute;
-    top: 29.5%;
-    left:25% ;
+    text-align: justify;
+    top: 58%;
+    left:11% ;
     color: whitesmoke;
-    padding: 1%;
-    padding-right:0.78%;
-    background-color: rgba(94, 109, 125, 0.295);
+    width:50% ;
+    height:50%;
+    padding-top:4%;
+    background-color: rgb(11, 39, 70);
+    border: 8px solid black;
 }
 #inputMisionProyecto{
     position: absolute;
-    top: 42.9%;
-    left:25% ;
-    padding:1%;
-    padding-right:3.35%;
-    background-color: rgba(94, 109, 125, 0.295);
-    color: whitesmoke;
+    text-align: justify;
+    width:22% ;
+    height:24%;
+    top:120%;
+    left:5%;
+    background-color: whitesmoke;
+    border: 8px solid black;
+    color: rgb(11, 39, 70);
 }
 #inputVisionProyecto{
     position: absolute;
-    top: 55%;
-    left:25% ;
-    padding:1%;
-    padding-right:3.6%;
-    background-color: rgba(94, 109, 125, 0.295);
-    color: whitesmoke;
+    text-align: justify;
+    width:15% ;
+    height:24%;
+    top: 120%;
+    left:40% ;
+    background-color: whitesmoke;
+    border: 8px solid black;
+    color: rgb(11, 39, 70);
 }
-#objetivos{
+#inputObjetivosProyecto{
     position: absolute;
-    top: 68.41%;
-    left:25% ;
-    padding:1%;
-    padding-right:6.65%;
-    background-color: rgba(94, 109, 125, 0.295);
-    color: whitesmoke;
-}
-#boton{
-    position: absolute;
-    top: 71%;
-    left:16% ;
-    color: whitesmoke;
-}
-#inputCausasProyecto{
-    position: absolute;
-    top: 77%;
-    left:62%;
-    padding:1%;
-    padding-right:2.65%;
-    background-color: rgba(94, 109, 125, 0.295);
-    color: whitesmoke;
-}
-#inputEfectosProyecto{
-    position: absolute;
-    top: 90%;
-    left:62% ;
-    padding:1%;
-    padding-right:2.65%;
-    background-color: rgba(94, 109, 125, 0.295);
-    color: whitesmoke;
+    text-align: justify;
+    width:22% ;
+    height:24%;
+    top: 120%;
+    right: 5%;
+    background-color: whitesmoke;
+    border: 8px solid black;
+    color: rgb(11, 39, 70);
 }
 #button{
     position: absolute;
-    top: 90%;
-    left:16% ;
-    color: whitesmoke;
+    top: 248%;
+    left:43% ;
+    color: rgb(11, 39, 70);
 }
-#listaObjetivos{
+#inputCausasProyecto{
     position: absolute;
-    top: 85%;
-    left:20% ;
+    text-align: justify;
+    width: 40%;
+    height: 36%;
+    top: 210%;
+    left:7%;
+    padding:1%;
+    padding-right:2.65%;
+    background-color: rgb(11, 39, 70);
     color: whitesmoke;
+    border: 8px solid black; 
+
+}
+#inputEfectosProyecto{
+    position: absolute;
+    top: 237%;
+    left:52% ;
+    width: 40%;
+    height: 16%;
+    background-color: rgb(11, 39, 70);
+    color: whitesmoke;
+    border: 8px solid black; 
+
 }

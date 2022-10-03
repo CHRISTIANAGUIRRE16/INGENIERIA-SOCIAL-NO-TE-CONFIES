@@ -1,12 +1,14 @@
 <link rel="stylesheet" href="/">
-
+<div id="logo">
+    <img src="/imagenes/logo.png" alt="">
+</div>
 {{#each traer}}
 <form action="/encuesta/encuestaEditar/{{idEncuestas}}" method="post" TYPE="text/css" enctype="multipart/form-data" MEDIA=screen>
 {{/each}}
 {{#each traer}}
 <div id="encuesta">
         <label>Nombre Encuesta</label>
-        <input value="{{encuesta}} "type="text" name="encuesta" id="Encuesta">
+        <input value="{{encuesta}} "type="file" name="encuesta" id="Encuesta">
     </div>
     {{/each}}
     <div id="button">

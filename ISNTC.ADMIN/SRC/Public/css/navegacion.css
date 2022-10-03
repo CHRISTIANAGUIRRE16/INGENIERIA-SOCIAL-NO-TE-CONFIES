@@ -2,65 +2,71 @@ nav {
     position: absolute;
     top: 0%;
     left: 0%;
-    background-color: rgb(11, 39, 70);
+    background-color: rgba(11, 39, 70, 0.744);
     width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 8%;
-    cursor: pointer;
-    padding:2%;
-    border: 5px solid rgb(15, 140, 132); 
+    padding:2.5%;
+    border-top: 150px solid rgba(0, 0, 0, 0.814);
     
 }
+#logo img {
+    position: absolute;
+    top: 0.5% ;
+    left: 1%;
+    width: 8%; 
+    opacity: calc(70%); 
 
-
+}
   
 #boton button:hover {
     position:relative;
     background-color: black;
    text-decoration: none;
     color: whitesmoke;
-    padding: 5%;
+    
 }
   
 
 
 #nav1 {
     position: absolute;
-    top: 15%;
+    top: 23%;
     zoom: 150%;
-    left:13%;
+    left:5%;
+   
     
 }
 
 #nav2 {
     position: absolute;
-    top: 15%;
+    top: 23%;
     zoom: 150%;
-    left: 25%;
+    left: 17%;
 }
 
 #nav3 {
     position: absolute;
-    top: 15%;
+    top: 23%;
     zoom: 150%;
-    left: 39.5%;
+    left: 31.5%;
 }
 #nav4 {
     position: absolute;
-    top: 15%;
+    top: 23%;
     zoom: 150%;
-    left: 57%;
+    left: 49%;
 }
 #nav5 {
     position: absolute;
-    top: 15%;
+    top: 23%;
     zoom: 150%;
-    left: 74%;
+    left: 66%;
 }
 #nav6 {
     position: absolute;
-    top: 15%;
+    top: 23%;
     zoom: 150%;
-    left: 94%;
+    left: 86%;
 }

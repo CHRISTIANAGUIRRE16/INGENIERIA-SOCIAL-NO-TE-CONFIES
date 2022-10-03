@@ -1,40 +1,35 @@
 <link rel="stylesheet" href="/css/navegacion.css">
 {{#if user}}
 <div id="menu">
- <button type="button" onclick="menus.aparicion()"><img src="/img/iconos/abajo.png" alt=""></button> 
-</div>
-<div id="abajo">
-  <button type="button" onclick="menus.botonMenu()"><img src="/img/iconos/menu.png" alt=""></button>
-</div>
 <nav id="nav">
   <div id="boton">
     <div id="nav1">
-      <a href="/proyecto/proyectoLista/{{user.idUsuarios}}"> <button type="button">Inicio</button></a>
+      <a href="/proyecto/proyectoLista/{{user.idUsuarios}}"  style="text-decoration: none" > <button type="button">Proyecto</button></a>
     </div>
   </div>
   <div id="boton">
     <div id="nav2">
-      <a href="/encuesta/encuestaLista/{{user.idUsuarios}}"> <button type="button">Encuesta</button> </a>
+      <a href="/encuesta/encuestaLista/{{user.idUsuarios}}"  style="text-decoration: none"> <button type="button">Encuesta</button> </a>
     </div>
   </div>
   <div id="boton">
     <div id="nav3">
-      <a href="/experiencias/experienciasLista/{{user.idUsuarios}}"> <button type="button">Experiencias</button> </a>
+      <a href="/experiencias/experienciasLista/{{user.idUsuarios}}"  style="text-decoration: none"> <button type="button">Experiencias</button> </a>
     </div>
   </div>
   <div id="boton">
     <div id="nav4">
-      <a href="/comentarios/comentariosLista/{{user.idUsuarios}}"> <button type="button">Comentarios</button></a>
+      <a href="/comentarios/comentariosLista/{{user.idUsuarios}}" style="text-decoration: none"> <button type="button">Comentarios</button></a>
     </div>
   </div>
     <div id="boton">
     <div id="nav5">
-      <a href="/recomendaciones/recomendacionesLista/{{user.idUsuarios}}"> <button type="button">Recomendaciones</button></a>
+      <a href="/recomendaciones/recomendacionesLista/{{user.idUsuarios}}"  style="text-decoration: none"> <button type="button">Recomendaciones</button></a>
     </div>
   </div>
   <div id="boton">
     <div id="nav6">
-      <a href="/cerrarSesion"> <button type="button">Salir</button></a>
+      <a href="/cerrarSesion"  style="text-decoration: none" > <button type="button" >Salir</button></a>
     </div>
   </div>
 </nav>

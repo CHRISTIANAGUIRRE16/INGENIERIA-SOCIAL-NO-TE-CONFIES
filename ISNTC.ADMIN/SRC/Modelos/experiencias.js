@@ -7,7 +7,7 @@ const experiencias = (sequelize, type) => {
         },
         temaExperiencias: type.STRING,
         fechaExperiencias: type.STRING,
-        videoExperiencias: type.STRING,
+        videoExperiencias: type.STRING(5000),
 
         creacionExperiencias: {
             type: 'TIMESTAMP',

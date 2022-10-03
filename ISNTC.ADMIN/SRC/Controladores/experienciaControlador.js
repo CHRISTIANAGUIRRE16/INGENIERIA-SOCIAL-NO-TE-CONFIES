@@ -1,19 +1,20 @@
-const experienciaCtl = {}
+const experienciasCtl = {}
 
 const orm = require('../configuraciónBase/baseDatos.orm')
 const sql = require('../configuraciónBase/baseDatos.sql')
 
-experienciaCtl.mostrar = (req, res) => {
+experienciasCtl.mostrar = (req, res) => {
     res.render('experiencias/experienciasAgregar');
 }
 
-experienciaCtl.mandar = async (req, res) => {
+experienciasCtl.mandar = async (req, res) => {
     const id = req.user.idUsuarios
-    const { temaExperiencias, fechaExperiencias, videoExperiencias, } = req.body
+    const {temaExperiencias, fechaExperiencias, videoExperiencias } = req.body;
     const nuevoEnvio = {
-       temaExperiencias,
-       fechaExperiencias,
-       videoExperiencias,
+        temaExperiencias,
+        fechaExperiencias, 
+        videoExperiencias
+    
         
     }
     await orm.experiencias.create(nuevoEnvio)
@@ -21,28 +22,27 @@ experienciaCtl.mandar = async (req, res) => {
     res.redirect('/experiencias/experienciasLista/' + id);
 }
 
-experienciaCtl.lista = async (req, res) => {
+experienciasCtl.lista = async (req, res) => {
     const lista = await sql.query('select * from experiencias')
     res.render('experiencias/experienciasLista', { lista })
 }
 
-experienciaCtl.traer = async (req, res) => {
+experienciasCtl.traer = async (req, res) => {
     const ids = req.params.id
-    const lista = await sql.query('select * from experiencias where idExperiencias = ?', [ids])
+    const lista = await sql.query('select * from experiencias where idexperiencias = ?', [ids])
     res.render('experiencias/experienciasEditar', { lista })
 }
 
-experienciaCtl.actualizar = async (req, res) => {
+experienciasCtl.actualizar = async (req, res) => {
     const id = req.user.idUsuarios
     const ids = req.params.id
-    const {temaExperiencias, fechaExperiencias, videoExperiencias,} = req.body
+    const {temaExperiencias, fechaExperiencias, videoExperiencias } = req.body
     const nuevoEnvio = {
         temaExperiencias,
-        fechaExperiencias,
-        videoExperiencias,
-        
+        fechaExperiencias, 
+        videoExperiencias
     }
-    await orm.experiencias.findOne({ where: { idExperiencias: ids } })
+    await orm.experiencias.findOne({ where: { idexperiencias: ids } })
         .then(actualizar => {
             actualizar.update(nuevoEnvio)
             req.flash('success', 'Actualizado con exito')
@@ -50,14 +50,14 @@ experienciaCtl.actualizar = async (req, res) => {
         })
 }
 
-experienciaCtl.eliminar = async (req, res) => {
+experienciasCtl.eliminar = async (req, res) => {
     const ids = req.params.id
     const id = req.user.idUsuarios
-    await orm.experiencias.destroy({ where: { idExperiencias: ids } })
+    await orm.experiencias.destroy({ where: { idexperiencias: ids } })
         .then(() => {
-            req.flash('success', 'Actualizado con exito')
+            req.flash('success', 'Eliminado con exito')
             res.redirect('/experiencias/experienciasLista/' + id);
         })
 }
 
-module.exports = experienciaCtl
+module.exports = experienciasCtl
